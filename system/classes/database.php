@@ -10,7 +10,7 @@ class database{
     
     public function __construct() {
         try{
-            return $this->con = new PDO("mysql:host=localhost;dbname=test", $this->user, $this->password);
+            return $this->con = new PDO("mysql:host=db4free.net;dbname=anjn_test", $this->user, $this->password);
         }
         catch(Exception $ex){
             echo $ex->getMessage();
